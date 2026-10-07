@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://officelab.site/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://officelab.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://officelab.site/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://officelab.site/"/>
+  </url>
+  <url>
+    <loc>https://officelab.site/en/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://officelab.site/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://officelab.site/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://officelab.site/"/>
+  </url>
+  <url>
+    <loc>https://officelab.site/cong-cu/invoicextract/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://officelab.site/cong-cu/invoicextract/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://officelab.site/en/tools/invoicextract/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://officelab.site/cong-cu/invoicextract/"/>
+  </url>
+  <url>
+    <loc>https://officelab.site/en/tools/invoicextract/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://officelab.site/cong-cu/invoicextract/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://officelab.site/en/tools/invoicextract/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://officelab.site/cong-cu/invoicextract/"/>
+  </url>
+  <url>
+    <loc>https://officelab.site/privacy/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://officelab.site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://officelab.site/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://officelab.site/privacy/"/>
+  </url>
+  <url>
+    <loc>https://officelab.site/en/privacy/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://officelab.site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://officelab.site/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://officelab.site/privacy/"/>
+  </url>
+</urlset>

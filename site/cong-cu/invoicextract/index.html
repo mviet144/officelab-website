@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InvoiceXtract — Đọc hoá đơn điện tử ra Excel | Office Lab</title>
+  <meta name="description" content="InvoiceXtract đọc hàng loạt hoá đơn GTGT điện tử (PDF, XML) trong một thư mục, xuất ra file Excel và tách riêng những hoá đơn cần kiểm tra lại.">
+  <link rel="canonical" href="https://officelab.site/cong-cu/invoicextract/">
+  <link rel="alternate" hreflang="vi" href="https://officelab.site/cong-cu/invoicextract/">
+  <link rel="alternate" hreflang="en" href="https://officelab.site/en/tools/invoicextract/">
+  <link rel="alternate" hreflang="x-default" href="https://officelab.site/cong-cu/invoicextract/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Office Lab">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="InvoiceXtract — Đọc hoá đơn điện tử ra Excel">
+  <meta property="og:description" content="Đọc hàng loạt hoá đơn GTGT điện tử (PDF, XML) trong một thư mục, xuất ra file Excel và tách riêng những hoá đơn cần kiểm tra lại.">
+  <meta property="og:url" content="https://officelab.site/cong-cu/invoicextract/">
+  <meta property="og:image" content="https://officelab.site/assets/img/og-vi.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f4efe4">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/nr-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/nr-vietnamese-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#noi-dung">Bỏ qua, tới nội dung</a>
+
+  <header class="masthead">
+    <div class="wrap">
+      <a class="logo" href="/">Office Lab</a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="/#cong-cu">Công cụ</a></li>
+          <li><a href="/#cach-lam">Cách làm</a></li>
+          <li><a href="/#ket-qua">Kết quả</a></li>
+          <li><a href="/#lien-he">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <a class="lang-link" href="/en/tools/invoicextract/" hreflang="en" lang="en">English</a>
+    </div>
+  </header>
+
+  <main id="noi-dung">
+    <!-- Đầu trang công cụ -->
+    <section class="tool-head">
+      <div class="wrap">
+        <p class="crumb mono"><a href="/#cong-cu">Công cụ</a> / OL-01 / InvoiceXtract</p>
+        <div class="grid">
+          <div>
+            <h1>InvoiceXtract</h1>
+            <p class="lead">Đọc hàng loạt hoá đơn GTGT điện tử trong một thư mục và xuất ra một file Excel. Hoá đơn nào có chỗ không khớp thì được tách riêng, kèm lý do.</p>
+            <div class="actions">
+              <a class="btn" href="mailto:contact@officelab.site?subject=InvoiceXtract">Hỏi về InvoiceXtract</a>
+              <a class="text-link" href="#gioi-han">Xem giới hạn hiện tại ↓</a>
+            </div>
+          </div>
+          <aside class="spec" aria-label="Thông tin nhanh">
+            <dl>
+              <dt>Trạng thái</dt><dd><span class="stamp stamp--dang-dung">Đang dùng thật</span></dd>
+              <dt>Dành cho</dt><dd>Kế toán nhập hoá đơn đầu vào</dd>
+              <dt>Đầu vào</dt><dd>PDF có lớp chữ, XML</dd>
+              <dt>Đầu ra</dt><dd>Một file Excel, 3 sheet</dd>
+              <dt>Chạy trên</dt><dd>Windows, ngay trên máy bạn</dd>
+              <dt>Mạng</dt><dd>Không cần</dd>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 Vấn đề -->
+    <section class="sec" aria-labelledby="van-de">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">01 · Vấn đề</p>
+          <div><h2 id="van-de">Gõ lại hoá đơn, từng dòng một.</h2></div>
+        </header>
+        <div class="indent">
+          <p>Mỗi kỳ, kế toán nhận về một loạt hoá đơn điện tử dạng PDF hoặc XML từ nhiều nhà cung cấp, mỗi nhà phát hành một mẫu khác nhau. Nhập chúng vào Excel thường là mở từng file, gõ lại ký hiệu, số hoá đơn, ngày, mã số thuế, rồi đến từng dòng hàng.</p>
+          <p>Việc này chậm, và đây là số liệu dùng để kê khai thuế. Gõ nhầm một chữ số thì sai cả tổng, mà tìm lại chỗ nhầm cũng mất thời gian không kém lúc nhập.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 Công cụ làm gì -->
+    <section class="sec sec--tint" aria-labelledby="lam-gi">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">02 · Công cụ làm gì</p>
+          <div><h2 id="lam-gi">Đọc, đối chiếu, rồi mới ghi.</h2></div>
+        </header>
+        <ol class="points indent">
+          <li><span>Quét một thư mục, kể cả các thư mục con, rồi đọc từng hoá đơn PDF và file XML trong đó.</span></li>
+          <li><span>Đọc bảng hàng hoá theo tên cột thật in trên hoá đơn, không đoán theo vị trí cố định, nên dùng được với mẫu của nhiều nhà phát hành khác nhau.</span></li>
+          <li><span>Nếu một hoá đơn có cả bản PDF và bản XML, công cụ lấy số từ XML vì đó là bản gốc. Bản PDF được dùng để đối chiếu: hai bản lệch nhau thì hoá đơn bị đánh dấu.</span></li>
+          <li><span>Kiểm tra số học trên từng dòng và từng hoá đơn: số lượng nhân đơn giá, tiền thuế, các dòng tổng, và so tổng thanh toán với dòng "số tiền viết bằng chữ". Lệch quá 1 đồng là đánh dấu cần kiểm tra.</span></li>
+          <li><span>Kiểm tra mã số thuế đúng 10 hoặc 13 số, ngày hoá đơn hợp lệ và không nằm ở tương lai.</span></li>
+          <li><span>Chạy hoàn toàn trên máy của bạn. Không cần mạng, không gửi hoá đơn đi đâu.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 03 Đầu vào / Đầu ra -->
+    <section class="sec" aria-labelledby="vao-ra">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">03 · Đầu vào, đầu ra</p>
+          <div><h2 id="vao-ra">Một thư mục vào, một file Excel ra.</h2></div>
+        </header>
+        <div class="io">
+          <div>
+            <span class="mono">Đầu vào</span>
+            <h3>Thư mục hoá đơn</h3>
+            <ul>
+              <li>File PDF có lớp chữ, tức bản tải về từ cổng của nhà phát hành (không phải bản scan).</li>
+              <li>File XML của hoá đơn.</li>
+              <li>Hoặc lẫn cả hai. File có đuôi khác được bỏ qua.</li>
+            </ul>
+          </div>
+          <div>
+            <span class="mono">Đầu ra</span>
+            <h3>Một file Excel, ba sheet</h3>
+            <ul>
+              <li><code>HoaDon</code>: mỗi hoá đơn một dòng.</li>
+              <li><code>ChiTiet</code>: mỗi dòng hàng một dòng.</li>
+              <li><code>CanKiemTra</code>: những hoá đơn cần xem lại, kèm lý do.</li>
+            </ul>
+            <p>Số tiền để ở dạng số, ngày ở dạng ngày, mã số thuế giữ nguyên số 0 ở đầu. Kèm file <code>log.txt</code> ghi lỗi của từng file.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Giới hạn hiện tại -->
+    <section class="sec sec--tint" id="gioi-han" aria-labelledby="gioi-han-tieu-de">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">04 · Giới hạn hiện tại</p>
+          <div>
+            <h2 id="gioi-han-tieu-de">Những gì nó chưa làm được.</h2>
+            <p>Bạn nên biết những điểm dưới đây trước khi dùng.</p>
+          </div>
+        </header>
+        <ol class="points points--warn indent">
+          <li><span>Không đọc PDF dạng ảnh, ví dụ hoá đơn in ra rồi scan lại. Những file này được đưa vào sheet <code>CanKiemTra</code>, kèm mã tra cứu nếu đọc được, để bạn tải bản XML gốc từ trang tra cứu của nhà phát hành. Mình cố ý không dùng OCR vì rủi ro đọc sai chữ số.</span></li>
+          <li><span>Phần đọc XML viết theo cấu trúc của Nghị định 123/2020 và Thông tư 78, nhưng mới được kiểm bằng file mẫu, chưa đối chiếu với XML thật của nhiều nhà phát hành. Với nhà phát hành mới, bạn nên soát kỹ vài hoá đơn đầu.</span></li>
+          <li><span>Có những mẫu PDF của nhà phát hành công cụ chưa đọc được. Khi đó hoá đơn được ghi vào <code>CanKiemTra</code> và <code>log.txt</code>, không bị bỏ qua.</span></li>
+          <li><span>Chỉ chạy trên Windows.</span></li>
+          <li><span>Không tự đăng nhập cổng hoá đơn điện tử của cơ quan thuế và không vượt captcha. Bước tải hoá đơn về máy vẫn do bạn làm.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 05 Ảnh minh hoạ -->
+    <section class="sec" aria-labelledby="demo">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">05 · Ảnh minh hoạ</p>
+          <div><h2 id="demo">Kết quả trông như thế nào</h2></div>
+        </header>
+        <!-- TODO: thay khung này bằng ảnh chụp chạy trên DỮ LIỆU GIẢ (hoá đơn mẫu tự tạo). Không dùng hoá đơn thật của khách. -->
+        <figure class="figure">
+          <div class="frame"><span class="mono">Hình 1 · Thay bằng ảnh chụp dữ liệu giả</span></div>
+          <figcaption>Ảnh minh hoạ sẽ dùng hoá đơn và số liệu giả, không dùng dữ liệu của khách hàng.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 06 Liên hệ -->
+    <section class="sec sec--tint" aria-labelledby="lien-he">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">06 · Liên hệ</p>
+          <div>
+            <h2 id="lien-he">Muốn thử với hoá đơn của bạn?</h2>
+            <p>Gửi email cho mình. Nếu được, cho mình biết bạn thường nhận hoá đơn từ những nhà phát hành nào và mỗi kỳ khoảng bao nhiêu hoá đơn.</p>
+          </div>
+        </header>
+        <div class="indent">
+          <a class="mail" href="mailto:contact@officelab.site?subject=InvoiceXtract">contact@officelab.site</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap mono">
+      <span>© 2026 Office Lab</span>
+      <ul>
+        <li><a href="/privacy/">Quyền riêng tư</a></li>
+        <li><a href="/en/tools/invoicextract/" hreflang="en" lang="en">English</a></li>
+        <li><a href="mailto:contact@officelab.site">contact@officelab.site</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

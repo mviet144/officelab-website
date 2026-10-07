@@ -1,0 +1,12 @@
+_tmp/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.env
+.env.*
+
+# Công cụ nội bộ của trợ lý AI, không đưa lên repo
+.agent/
+.domyh/
+.claude/

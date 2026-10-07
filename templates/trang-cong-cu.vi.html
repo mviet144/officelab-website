@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TEN_CONG_CU}} — {{MO_TA_NGAN}} | Office Lab</title>
+  <meta name="description" content="{{MO_TA_META}}">
+  <link rel="canonical" href="https://officelab.site/cong-cu/{{SLUG}}/">
+  <link rel="alternate" hreflang="vi" href="https://officelab.site/cong-cu/{{SLUG}}/">
+  <link rel="alternate" hreflang="en" href="https://officelab.site/en/tools/{{SLUG}}/">
+  <link rel="alternate" hreflang="x-default" href="https://officelab.site/cong-cu/{{SLUG}}/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Office Lab">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="{{TEN_CONG_CU}} — {{MO_TA_NGAN}}">
+  <meta property="og:description" content="{{MO_TA_META}}">
+  <meta property="og:url" content="https://officelab.site/cong-cu/{{SLUG}}/">
+  <meta property="og:image" content="https://officelab.site/assets/img/og-vi.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f4efe4">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/nr-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/nr-vietnamese-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#noi-dung">Bỏ qua, tới nội dung</a>
+
+  <header class="masthead">
+    <div class="wrap">
+      <a class="logo" href="/">Office Lab</a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="/#cong-cu">Công cụ</a></li>
+          <li><a href="/#cach-lam">Cách làm</a></li>
+          <li><a href="/#ket-qua">Kết quả</a></li>
+          <li><a href="/#lien-he">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <a class="lang-link" href="/en/tools/{{SLUG}}/" hreflang="en" lang="en">English</a>
+    </div>
+  </header>
+
+  <main id="noi-dung">
+    <section class="tool-head">
+      <div class="wrap">
+        <p class="crumb mono"><a href="/#cong-cu">Công cụ</a> / {{MA}} / {{TEN_CONG_CU}}</p>
+        <div class="grid">
+          <div>
+            <h1>{{TEN_CONG_CU}}</h1>
+            <p class="lead">{{MOT_DOAN_LAM_GI}}</p>
+            <div class="actions">
+              <a class="btn" href="mailto:contact@officelab.site?subject={{TEN_CONG_CU_URL}}">Hỏi về {{TEN_CONG_CU}}</a>
+              <a class="text-link" href="#gioi-han">Xem giới hạn hiện tại ↓</a>
+            </div>
+          </div>
+          <aside class="spec" aria-label="Thông tin nhanh">
+            <dl>
+              <!-- Trạng thái: stamp--dang-dung "Đang dùng thật" | stamp--thu-nghiem "Thử nghiệm" | stamp--sap-ra-mat "Sắp ra mắt" -->
+              <dt>Trạng thái</dt><dd><span class="stamp stamp--{{TRANG_THAI_CLASS}}">{{TRANG_THAI_CHU}}</span></dd>
+              <dt>Dành cho</dt><dd>{{DOI_TUONG}}</dd>
+              <dt>Đầu vào</dt><dd>{{DAU_VAO_NGAN}}</dd>
+              <dt>Đầu ra</dt><dd>{{DAU_RA_NGAN}}</dd>
+              <dt>Chạy trên</dt><dd>{{CHAY_TREN}}</dd>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="van-de">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">01 · Vấn đề</p>
+          <div><h2 id="van-de">{{TIEU_DE_VAN_DE}}</h2></div>
+        </header>
+        <div class="indent">
+          <p>{{VAN_DE_DOAN_1}}</p>
+          <p>{{VAN_DE_DOAN_2}}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec--tint" aria-labelledby="lam-gi">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">02 · Công cụ làm gì</p>
+          <div><h2 id="lam-gi">{{TIEU_DE_LAM_GI}}</h2></div>
+        </header>
+        <ol class="points indent">
+          <li><span>{{LAM_GI_1}}</span></li>
+          <li><span>{{LAM_GI_2}}</span></li>
+          <li><span>{{LAM_GI_3}}</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="vao-ra">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">03 · Đầu vào, đầu ra</p>
+          <div><h2 id="vao-ra">{{TIEU_DE_VAO_RA}}</h2></div>
+        </header>
+        <div class="io">
+          <div>
+            <span class="mono">Đầu vào</span>
+            <h3>{{DAU_VAO_TIEU_DE}}</h3>
+            <ul><li>{{DAU_VAO_1}}</li></ul>
+          </div>
+          <div>
+            <span class="mono">Đầu ra</span>
+            <h3>{{DAU_RA_TIEU_DE}}</h3>
+            <ul><li>{{DAU_RA_1}}</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec--tint" id="gioi-han" aria-labelledby="gioi-han-tieu-de">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">04 · Giới hạn hiện tại</p>
+          <div>
+            <h2 id="gioi-han-tieu-de">Những gì nó chưa làm được.</h2>
+            <p>Bạn nên biết những điểm dưới đây trước khi dùng.</p>
+          </div>
+        </header>
+        <!-- Nói thẳng, kể cả phần chưa kiểm chứng với dữ liệu thật. -->
+        <ol class="points points--warn indent">
+          <li><span>{{GIOI_HAN_1}}</span></li>
+          <li><span>{{GIOI_HAN_2}}</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="demo">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">05 · Ảnh minh hoạ</p>
+          <div><h2 id="demo">Kết quả trông như thế nào</h2></div>
+        </header>
+        <!-- TODO: thay khung này bằng ảnh chụp chạy trên DỮ LIỆU GIẢ. Không dùng dữ liệu thật của khách. -->
+        <figure class="figure">
+          <div class="frame"><span class="mono">Hình 1 · Thay bằng ảnh chụp dữ liệu giả</span></div>
+          <figcaption>Ảnh minh hoạ sẽ dùng số liệu giả, không dùng dữ liệu của khách hàng.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sec sec--tint" aria-labelledby="lien-he">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">06 · Liên hệ</p>
+          <div>
+            <h2 id="lien-he">Muốn thử {{TEN_CONG_CU}}?</h2>
+            <p>{{LOI_MOI_LIEN_HE}}</p>
+          </div>
+        </header>
+        <div class="indent">
+          <a class="mail" href="mailto:contact@officelab.site?subject={{TEN_CONG_CU_URL}}">contact@officelab.site</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap mono">
+      <span>© 2026 Office Lab</span>
+      <ul>
+        <li><a href="/privacy/">Quyền riêng tư</a></li>
+        <li><a href="/en/tools/{{SLUG}}/" hreflang="en" lang="en">English</a></li>
+        <li><a href="mailto:contact@officelab.site">contact@officelab.site</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

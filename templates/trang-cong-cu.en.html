@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TEN_CONG_CU}} — {{SHORT_TAGLINE}} | Office Lab</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <link rel="canonical" href="https://officelab.site/en/tools/{{SLUG}}/">
+  <link rel="alternate" hreflang="vi" href="https://officelab.site/cong-cu/{{SLUG}}/">
+  <link rel="alternate" hreflang="en" href="https://officelab.site/en/tools/{{SLUG}}/">
+  <link rel="alternate" hreflang="x-default" href="https://officelab.site/cong-cu/{{SLUG}}/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Office Lab">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="vi_VN">
+  <meta property="og:title" content="{{TEN_CONG_CU}} — {{SHORT_TAGLINE}}">
+  <meta property="og:description" content="{{META_DESCRIPTION}}">
+  <meta property="og:url" content="https://officelab.site/en/tools/{{SLUG}}/">
+  <meta property="og:image" content="https://officelab.site/assets/img/og-en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f4efe4">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/nr-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="masthead">
+    <div class="wrap">
+      <a class="logo" href="/en/">Office Lab</a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="/en/#tools">Tools</a></li>
+          <li><a href="/en/#how-i-work">How I work</a></li>
+          <li><a href="/en/#results">Results</a></li>
+          <li><a href="/en/#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="lang-link" href="/cong-cu/{{SLUG}}/" hreflang="vi" lang="vi">Tiếng Việt</a>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="tool-head">
+      <div class="wrap">
+        <p class="crumb mono"><a href="/en/#tools">Tools</a> / {{MA}} / {{TEN_CONG_CU}}</p>
+        <div class="grid">
+          <div>
+            <h1>{{TEN_CONG_CU}}</h1>
+            <p class="lead">{{WHAT_IT_DOES_PARAGRAPH}}</p>
+            <div class="actions">
+              <a class="btn" href="mailto:contact@officelab.site?subject={{TEN_CONG_CU_URL}}">Ask about {{TEN_CONG_CU}}</a>
+              <a class="text-link" href="#limits">See current limits ↓</a>
+            </div>
+          </div>
+          <aside class="spec" aria-label="At a glance">
+            <dl>
+              <!-- Status: stamp--dang-dung "In real use" | stamp--thu-nghiem "Experimental" | stamp--sap-ra-mat "Coming soon" -->
+              <dt>Status</dt><dd><span class="stamp stamp--{{TRANG_THAI_CLASS}}">{{STATUS_TEXT}}</span></dd>
+              <dt>For</dt><dd>{{AUDIENCE}}</dd>
+              <dt>Input</dt><dd>{{INPUT_SHORT}}</dd>
+              <dt>Output</dt><dd>{{OUTPUT_SHORT}}</dd>
+              <dt>Runs on</dt><dd>{{RUNS_ON}}</dd>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="problem">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">01 · The problem</p>
+          <div><h2 id="problem">{{PROBLEM_TITLE}}</h2></div>
+        </header>
+        <div class="indent">
+          <p>{{PROBLEM_1}}</p>
+          <p>{{PROBLEM_2}}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec--tint" aria-labelledby="what-it-does">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">02 · What it does</p>
+          <div><h2 id="what-it-does">{{WHAT_TITLE}}</h2></div>
+        </header>
+        <ol class="points indent">
+          <li><span>{{DOES_1}}</span></li>
+          <li><span>{{DOES_2}}</span></li>
+          <li><span>{{DOES_3}}</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="in-out">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">03 · Input and output</p>
+          <div><h2 id="in-out">{{IO_TITLE}}</h2></div>
+        </header>
+        <div class="io">
+          <div>
+            <span class="mono">Input</span>
+            <h3>{{INPUT_TITLE}}</h3>
+            <ul><li>{{INPUT_1}}</li></ul>
+          </div>
+          <div>
+            <span class="mono">Output</span>
+            <h3>{{OUTPUT_TITLE}}</h3>
+            <ul><li>{{OUTPUT_1}}</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec--tint" id="limits" aria-labelledby="limits-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">04 · Current limits</p>
+          <div>
+            <h2 id="limits-title">What it can't do yet.</h2>
+            <p>Worth knowing before you use it.</p>
+          </div>
+        </header>
+        <!-- Be blunt, including anything not yet checked against real data. -->
+        <ol class="points points--warn indent">
+          <li><span>{{LIMIT_1}}</span></li>
+          <li><span>{{LIMIT_2}}</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="demo">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">05 · Screenshots</p>
+          <div><h2 id="demo">What the output looks like</h2></div>
+        </header>
+        <!-- TODO: replace this frame with a screenshot taken on FAKE data. Never use real client data. -->
+        <figure class="figure">
+          <div class="frame"><span class="mono">Figure 1 · Replace with a screenshot of fake data</span></div>
+          <figcaption>Screenshots will use made-up figures, never client data.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sec sec--tint" aria-labelledby="contact">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="sec-no mono">06 · Contact</p>
+          <div>
+            <h2 id="contact">Want to try {{TEN_CONG_CU}}?</h2>
+            <p>{{CONTACT_INVITE}}</p>
+          </div>
+        </header>
+        <div class="indent">
+          <a class="mail" href="mailto:contact@officelab.site?subject={{TEN_CONG_CU_URL}}">contact@officelab.site</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap mono">
+      <span>© 2026 Office Lab</span>
+      <ul>
+        <li><a href="/en/privacy/">Privacy</a></li>
+        <li><a href="/cong-cu/{{SLUG}}/" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+        <li><a href="mailto:contact@officelab.site">contact@officelab.site</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

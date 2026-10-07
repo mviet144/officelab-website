@@ -1,0 +1,29 @@
+<!--
+  Dòng công cụ cho bảng danh mục ở trang chủ. Copy khối <tr class="is-tool"> tương ứng,
+  dán vào <tbody> của <table class="catalog"> trong site/index.html (bản VI) và site/en/index.html (bản EN),
+  ngay TRÊN dòng <tr class="is-next">. Sau đó tăng mã OL-xx của dòng is-next lên 1.
+
+  Nhãn trạng thái (con dấu) — chọn 1 trong 3, giữ đúng cặp class và chữ:
+    VI: stamp--dang-dung "Đang dùng thật" | stamp--thu-nghiem "Thử nghiệm" | stamp--sap-ra-mat "Sắp ra mắt"
+    EN: stamp--dang-dung "In real use"    | stamp--thu-nghiem "Experimental" | stamp--sap-ra-mat "Coming soon"
+-->
+
+<!-- ===== Bản tiếng Việt (site/index.html) ===== -->
+            <tr class="is-tool">
+              <td class="code">{{MA}}</td>
+              <td class="name"><a href="/cong-cu/{{SLUG}}/">{{TEN_CONG_CU}}</a></td>
+              <td class="what">{{MOT_CAU_VIEC_GIAI_QUYET}}</td>
+              <td class="who">{{DOI_TUONG}}</td>
+              <td class="state"><span class="stamp stamp--{{TRANG_THAI_CLASS}}">{{TRANG_THAI_CHU}}</span></td>
+            </tr>
+
+<!-- ===== Bản tiếng Anh (site/en/index.html) ===== -->
+            <tr class="is-tool">
+              <td class="code">{{MA}}</td>
+              <td class="name"><a href="/en/tools/{{SLUG}}/">{{TEN_CONG_CU}}</a></td>
+              <td class="what">{{ONE_SENTENCE_WHAT_IT_SOLVES}}</td>
+              <td class="who">{{AUDIENCE}}</td>
+              <td class="state"><span class="stamp stamp--{{TRANG_THAI_CLASS}}">{{STATUS_TEXT}}</span></td>
+            </tr>
+
+<!-- ===== Công cụ "Sắp ra mắt" chưa có trang chi tiết: bỏ thẻ <a>, chỉ để tên trong <td class="name">. ===== -->
